@@ -109,5 +109,5 @@ const generatedBibEntries = {
         "url": "https://doi.org/10.1145/1553374.1553380",
         "pages": "41-48",
         "year": "2009"
-    }
+    },
 };
