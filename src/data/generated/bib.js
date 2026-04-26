@@ -56,5 +56,31 @@ const generatedBibEntries = {
         "type": "inproceedings",
         "url": "https://proceedings.mlr.press/v119/mirzasoleiman20a",
         "year": "2020"
-    }    
+    },
+    "8628742": {
+        "abstract": "Deep artificial neural networks require a large corpus of training data in order to effectively learn, where collection of such training data is often expensive and laborious.Data augmentationovercomes this issue by artificially inflating the training set with label preserving transformations. Recently there has been extensive use of generic data augmentation to improveConvolutional Neural Network(CNN) task performance. This study benchmarks various popular data augmentation schemes to allow researchers to make informed decisions as to which training methods are most appropriate for their data sets. Various geometric and photometric schemes are evaluated on a coarse-grained data set using a relatively simple CNN. Experimental results, run using 4-fold cross-validation and reported in terms of Top-1 and Top-5 accuracy, indicate that croppingin geometric augmentationsignificantly increases CNN task performance.",
+        "author": "Taylor, Luke and Nitschke, Geoff",
+        "booktitle": "2018 IEEE Symposium Series on Computational Intelligence (SSCI)",
+        "doi": "10.1109/SSCI.2018.8628742",
+        "keywords": "type: inproceedings, category: data_regularisation, data_augmentation, deep_learning",
+        "publisher": "IEEE",
+        "pages": "1542-1547",
+        "title": "Improving Deep Learning with Generic Data Augmentation",
+        "type": "inproceedings",
+        "url": "https://ieeexplore.ieee.org/document/8628742",
+        "year": "2018"
+    },
+    "pmlr-v95-takahashi18a": {
+        "abstract": "Deep convolutional neural networks (CNNs) have demonstrated remarkable results in image recognition owing to their rich expression ability and numerous parameters. However, an excessive expression ability compared to the variety of training images often has a risk of overfitting. Data augmentation techniques have been proposed to address this problem as they enrich datasets by flipping, cropping, resizing, and color-translating images. They enable deep CNNs to achieve an impressive performance. In this study, we propose a new data augmentation technique called \emph{random image cropping and patching} (\emph{RICAP}), which randomly crops four images and patches them to construct a new training image. Hence, RICAP randomly picks up subsets of original features among the four images and discard others, enriching the variety of training images. Also, RICAP mixes the class labels of the four images and enjoys a benefit similar to label smoothing. We evaluated RICAP with current state-of-the-art CNNs (e.g., shake-shake regularization model) and achieved a new state-of-the-art test error of \textcolor{red}{2.23} on CIFAR-10 among competitive data augmentation techniques such as cutout and mixup. We also confirmed that deep CNNs with RICAP achieved better results on CIFAR-100 and ImageNet than those results obtained by other techniques.",
+        "author": "Takahashi, Ryo and Matsubara, Takashi and Uehara, Kuniaki",
+        "booktitle": "Proceedings of The 10th Asian Conference on Machine Learning",
+        "doi": "10.48550/arXiv.1811.09030",
+        "keywords": "type: inproceedings, category: data_regularisation, data_augmentation, deep_learning",
+        "publisher": "PMLR",
+        "pages": "786-798",
+        "title": "Data Augmentation using Random Image Cropping and Patching for Deep CNNs",
+        "type": "inproceedings",
+        "url": "https://proceedings.mlr.press/v95/takahashi18a.html",
+        "year": "2018"
+    }
 };
