@@ -1,38 +1,39 @@
-@article{Beck2016Visual,
-  abstract = {Bibiographic data such as collections of scientific articles and citation networks have been studied extensively in information visualization and visual analytics research. Powerful systems have been built to support various types of bibliographic analysis, but they require some training and cannot be used to disseminate the insights gained. In contrast, we focused on developing a more accessible visual analytics system, called SurVis, that is ready to disseminate a carefully surveyed literature collection. The authors of a survey may use our Web-based system to structure and analyze their literature database. Later, readers of the survey can obtain an overview, quickly retrieve specific publications, and reproduce or extend the original bibliographic analysis. Our system employs a set of selectors that enable users to filter and browse the literature collection as well as to control interactive visualizations. The versatile selector concept includes selectors for textual search, filtering by keywords and meta-information, selection and clustering of similar publications, and following citation links. Agreement to the selector is represented by word-sized sparkline visualizations seamlessly integrated into the user interface. Based on an analysis of the analytical reasoning process, we derived requirements for the system. We developed the system in a formative way involving other researchers writing literature surveys. A questionnaire study with 14 visual analytics experts confirms that SurVis meets the initially formulated requirements.},
-  author = {Beck, Fabian and Koch, Sebastian and Weiskopf, Daniel},
-  doi = {10.1109/TVCG.2015.2467757},
-  journal = {IEEE Transactions on Visualization and Computer Graphics},
-  keywords = {type:system, visual_analytics, sparklines, information_retrieval, clustering, literature_browser},
-  number = {01},
-  publisher = {IEEE},
-  volume = {22},
-  series = {TVCG},
-  title = {Visual Analysis and Dissemination of Scientific Literature Collections with {SurVis}},
-  url = {http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/vast15-survis.pdf},
-  year = {2016}
-}
-
-@article{sathiyanarayanan2025progressivedatadropoutembarrassingly,
-  abstract = {The success of the machine learning field has reliably depended on training on large datasets. While effective, this trend comes at an extraordinary cost. This is due to two deeply intertwined factors: the size of models and the size of datasets. While promising research efforts focus on reducing the size of models, the other half of the equation remains fairly mysterious. Indeed, it is surprising that the standard approach to training remains to iterate over and over, uniformly sampling the training dataset. In this paper we explore a series of alternative training paradigms that leverage insights from hard-data-mining and dropout, simple enough to implement and use that can become the new training standard. The proposed Progressive Data Dropout reduces the number of effective epochs to as little as 12.4% of the baseline. This savings actually do not come at any cost for accuracy. Surprisingly, the proposed method improves accuracy by up to 4.82%. Our approach requires no changes to model architecture or optimizer, and can be applied across standard training pipelines, thus posing an excellent opportunity for wide adoption.},
-  author={Shriram M Sathiyanarayanan and Xinyue Hao and Shihao Hou and Yang Lu and Laura Sevilla-Lara and Anurag Arnab and Shreyank N Gowda},
-  doi= {10.48550/arXiv.2505.22342},
-  keywords = {computer_vision, deep_learning, data_sampling, data_dropout},
-  publisher = {arxiv},
-  title={Progressive Data Dropout: An Embarrassingly Simple Approach to Faster Training}, 
-  url={https://arxiv.org/abs/2505.22342}, 
-  year={2025},
-}
-
-@inproceedings{paul2021deeplearning,
-  abstract = {Recent success in deep learning has partially been driven by training increasingly overparametrized networks on ever larger datasets. It is therefore natural to ask: how much of the data is superfluous, which examples are important for generalization, and how do we find them? In this work, we make the striking observation that, in standard vision datasets, simple scores averaged over several weight initializations can be used to identify important examples very early in training. We propose two such scores -- the Gradient Normed (GraNd) and the Error L2-Norm (EL2N) scores -- and demonstrate their efficacy on a range of architectures and datasets by pruning significant fractions of training data without sacrificing test accuracy. In fact, using EL2N scores calculated a few epochs into training, we can prune half of the CIFAR10 training set while slightly improving test accuracy. Furthermore, for a given dataset, EL2N scores from one architecture or hyperparameter configuration generalize to other configurations. Compared to recent work that prunes data by discarding examples that are rarely forgotten over the course of training, our scores use only local information early in training. We also use our scores to detect noisy examples and study training dynamics through the lens of important examples -- we investigate how the data distribution shapes the loss surface and identify subspaces of the model's data representation that are relatively stable over training.},
-  author   = {Mansheej Paul and Surya Ganguli and Gintare Karolina Dziugaite},
-  doi      = {10.48550/arXiv.2107.07075},
-  journal  = {NeurIPS},
-  keywords = {computer_vision, deep_learning, data_sampling, data_dropout},
-  publisher = {arxiv},
-  volume    = {abs/2107.07075},
-  title    = {Deep Learning on a Data Diet: Finding Important Examples Early in Training},
-  url      = {https://arxiv.org/abs/2107.07075},
-  year     = {2021},
-}
+const generatedBibEntries = {
+    "Beck2016Visual": {
+        "abstract": "Bibiographic data such as collections of scientific articles and citation networks have been studied extensively in information visualization and visual analytics research. Powerful systems have been built to support various types of bibliographic analysis, but they require some training and cannot be used to disseminate the insights gained. In contrast, we focused on developing a more accessible visual analytics system, called SurVis, that is ready to disseminate a carefully surveyed literature collection.",
+        "author": "Beck, Fabian and Koch, Sebastian and Weiskopf, Daniel",
+        "doi": "10.1109/TVCG.2015.2467757",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "keywords": "type:system, visual_analytics, sparklines, information_retrieval, clustering, literature_browser",
+        "number": "01",
+        "publisher": "IEEE",
+        "series": "TVCG",
+        "title": "Visual Analysis and Dissemination of Scientific Literature Collections with {SurVis}",
+        "type": "article",
+        "url": "http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/vast15-survis.pdf",
+        "volume": "22",
+        "year": "2016"
+    },
+    "sathiyanarayanan2025progressive": {
+        "abstract": "The success of the machine learning field has reliably depended on training on large datasets. While effective, this trend comes at an extraordinary cost. The proposed Progressive Data Dropout reduces the number of effective epochs to as little as 12.4% of the baseline without any cost to accuracy, and surprisingly improves accuracy by up to 4.82%.",
+        "author": "Sathiyanarayanan, Shriram M and Hao, Xinyue and Hou, Shihao and Lu, Yang and Sevilla-Lara, Laura and Arnab, Anurag and Gowda, Shreyank N",
+        "doi": "10.48550/arXiv.2505.22342",
+        "keywords": "type:misc, category:data_sampling, data_dropout, deep_learning",
+        "publisher": "arXiv",
+        "title": "Progressive Data Dropout: An Embarrassingly Simple Approach to Faster Training",
+        "type": "misc",
+        "url": "https://arxiv.org/abs/2505.22342",
+        "year": "2025"
+    },
+    "paul2021deeplearning": {
+        "abstract": "Recent success in deep learning has partially been driven by training increasingly overparametrized networks on ever larger datasets. This work proposes GraNd and EL2N scores to identify important training examples early in training, enabling pruning of significant fractions of training data without sacrificing test accuracy.",
+        "author": "Paul, Mansheej and Ganguli, Surya and Dziugaite, Gintare Karolina",
+        "booktitle": "Advances in Neural Information Processing Systems (NeurIPS)",
+        "doi": "10.48550/arXiv.2107.07075",
+        "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
+        "title": "Deep Learning on a Data Diet: Finding Important Examples Early in Training",
+        "type": "inproceedings",
+        "url": "https://arxiv.org/abs/2107.07075",
+        "year": "2021"
+    }
+};
