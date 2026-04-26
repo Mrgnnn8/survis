@@ -82,5 +82,19 @@ const generatedBibEntries = {
         "type": "inproceedings",
         "url": "https://proceedings.mlr.press/v95/takahashi18a.html",
         "year": "2018"
+    },
+    "10.1145/3700439": {
+        "abstract": "The field of deep learning has witnessed significant progress in recent times, particularly in areas such as computer vision (CV), natural language processing (NLP), and speech. The use of large-scale models trained on vast amounts of data holds immense promise for practical applications, enhancing industrial productivity and facilitating social development. However, it suffers extremely from the unstable training process and stringent requirements of computational resources. With the increasing demands on the adaption of computational capacity, though numerous studies have explored the efficient training field to a certain extent, a comprehensive summarization/guideline on those general acceleration techniques of training large-scale deep learning models is still much anticipated. In this survey, we present a detailed review of the general techniques for training acceleration. We consider the fundamental update formulation and split its basic components into five main perspectives: (1) “data-centric,” including dataset regularization, data sampling, and data-centric curriculum learning techniques, which can significantly reduce the computational complexity of the data samples; (2) “model-centric,” including acceleration of basic modules, compression training, model initialization, and model-centric curriculum learning techniques, which focus on accelerating the training via reducing the calculations on parameters and providing better initialization; (3) “optimization-centric,” including the selection of learning rate, the employment of large batch size, the designs of efficient objectives, and model average techniques, which pay attention to the training policy and improving the generality for the large-scale models; (4) “budgeted training,” including some distinctive acceleration methods on source-constrained situations, e.g., for limitation on the total iterations; and (5) “system-centric,” including some efficient distributed frameworks and open source libraries that provide adequate hardware support for the implementation of the above-mentioned acceleration algorithms. By presenting this comprehensive taxonomy, our survey presents a comprehensive review to understand the general mechanisms within each component and their joint interaction. Meanwhile, we further provide a detailed analysis and discussion of future works on the development of general acceleration techniques, which could inspire us to re-think and design novel efficient paradigms. Overall, we hope that this survey will serve as a valuable guideline for general efficient training",
+        "author": "Shen, Li and Sun, Yan and Yu, Zhiyuan and Ding, Liang and Tian, Xinmei and Tao, Dacheng",
+        "journal": "ACM Comput. Surv.",
+        "doi": "10.1145/3700439",
+        "keywords": "type: article, category: survey, data_sampling, data_regularisation, curriculum_learning, deep_learning",
+        "publisher": "Association for Computing Machinery",
+        "title": "On Efficient Training of Large-Scale Deep Learning Models",
+        "url": "https://doi.org/10.1145/3700439",
+        "year": "2024",
+        "issn": "0360-0300",
+        "volume": "57",
+        "number": "3"
     }
 };
