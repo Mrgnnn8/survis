@@ -13,7 +13,7 @@ const generatedBibEntries = {
     "paul2021deeplearning": {
         "abstract": "Recent success in deep learning has partially been driven by training increasingly overparametrized networks on ever larger datasets. This work proposes GraNd and EL2N scores to identify important training examples early in training, enabling pruning of significant fractions of training data without sacrificing test accuracy.",
         "author": "Paul, Mansheej and Ganguli, Surya and Dziugaite, Gintare Karolina",
-        "booktitle": "Advances in Neural Information Processing Systems (NeurIPS)",
+        "series": "Advances in Neural Information Processing Systems (NeurIPS)",
         "doi": "10.48550/arXiv.2107.07075",
         "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
         "title": "Deep Learning on a Data Diet: Finding Important Examples Early in Training",
@@ -35,7 +35,7 @@ const generatedBibEntries = {
     "toneva2019empiricalforgetting": {
         "abstract": "Inspired by the phenomenon of catastrophic forgetting, this work investigates the learning dynamics of neural networks training on single classification tasks. A forgetting event is defined as when an individual training example transitions from being classified correctly to incorrectly over the course of learning. The authors find that certain examples are forgotten with high frequency while others are never forgotten, and that a significant fraction of examples can be omitted from training while maintaining state-of-the-art generalization performance.",
         "author": "Toneva, Mariya and Sordoni, Alessandro and des Combes, Remi Tachet and Trischler, Adam and Bengio, Yoshua and Gordon, Geoffrey J",
-        "booktitle": "International Conference on Learning Representations",
+        "series": "International Conference on Learning Representations",
         "doi": "10.48550/arXiv.1812.05159",
         "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
         "publisher": "arXiv",
@@ -47,7 +47,7 @@ const generatedBibEntries = {
     "mirzasoleiman2020coresets": {
         "abstract": "This work develops CRAIG, a method to select a weighted subset (coreset) of training data that closely estimates the full gradient by maximizing a submodular function. Applying incremental gradient methods to this subset is guaranteed to converge to the near-optimal solution with the same convergence rate as the full dataset. CRAIG achieves a speedup inversely proportional to the subset size, speeding up various methods by up to 6x for logistic regression and 3x for deep neural networks.",
         "author": "Mirzasoleiman, Baharan and Bilmes, Jeff and Leskovec, Jure",
-        "booktitle": "Proceedings of the 37th International Conference on Machine Learning",
+        "series": "Proceedings of the 37th International Conference on Machine Learning",
         "doi": "10.48550/arXiv.1906.01827",
         "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
         "publisher": "PMLR",
@@ -59,7 +59,7 @@ const generatedBibEntries = {
     "taylor2018dataaugmentation": {
         "abstract": "This study benchmarks various popular data augmentation schemes to allow researchers to make informed decisions as to which training methods are most appropriate for their datasets. Various geometric and photometric schemes are evaluated on a coarse-grained dataset using a relatively simple CNN. Results indicate that cropping in geometric augmentation significantly increases CNN task performance.",
         "author": "Taylor, Luke and Nitschke, Geoff",
-        "booktitle": "2018 IEEE Symposium Series on Computational Intelligence (SSCI)",
+        "series": "2018 IEEE Symposium Series on Computational Intelligence (SSCI)",
         "doi": "10.1109/SSCI.2018.8628742",
         "keywords": "type:inproceedings, category:data_regularisation, data_augmentation, deep_learning",
         "publisher": "IEEE",
@@ -72,7 +72,7 @@ const generatedBibEntries = {
     "takahashi2018ricap": {
         "abstract": "This study proposes RICAP (Random Image Cropping and Patching), a data augmentation technique which randomly crops four images and patches them to construct a new training image. RICAP mixes the class labels of the four images and enjoys a benefit similar to label smoothing. RICAP achieved a new state-of-the-art test error of 2.23 on CIFAR-10 among competitive data augmentation techniques such as cutout and mixup.",
         "author": "Takahashi, Ryo and Matsubara, Takashi and Uehara, Kuniaki",
-        "booktitle": "Proceedings of The 10th Asian Conference on Machine Learning",
+        "series": "Proceedings of The 10th Asian Conference on Machine Learning",
         "doi": "10.48550/arXiv.1811.09030",
         "keywords": "type:inproceedings, category:data_regularisation, data_augmentation, deep_learning",
         "publisher": "PMLR",
@@ -94,12 +94,13 @@ const generatedBibEntries = {
         "url": "https://doi.org/10.1145/3700439",
         "year": "2024",
         "volume": "57",
-        "number": "3"
+        "number": "3",
+        "series": "ACM Computing Surveys",
     },
     "bengio2009curriculum": {
         "abstract": "This paper formalizes curriculum learning in the context of machine learning, where training examples are not randomly presented but organized in a meaningful order illustrating gradually more concepts. Experiments show that significant improvements in generalization can be achieved. The authors hypothesize that curriculum learning affects both the speed of convergence and, in the case of non-convex criteria, the quality of the local minima obtained.",
         "author": "Bengio, Yoshua and Louradour, Jerome and Collobert, Ronan and Weston, Jason",
-        "booktitle": "Proceedings of the 26th Annual International Conference on Machine Learning",
+        "series": "Proceedings of the 26th Annual International Conference on Machine Learning",
         "doi": "10.1145/1553374.1553380",
         "isbn": "9781605585161",
         "keywords": "type:inproceedings, category:curriculum_learning, deep_learning",
