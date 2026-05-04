@@ -80,7 +80,8 @@ const generatedBibEntries = {
     "takahashi2018ricap": {
         "abstract": "This study proposes RICAP (Random Image Cropping and Patching), a data augmentation technique which randomly crops four images and patches them to construct a new training image. RICAP mixes the class labels of the four images and enjoys a benefit similar to label smoothing. RICAP achieved a new state-of-the-art test error of 2.23 on CIFAR-10 among competitive data augmentation techniques such as cutout and mixup.",
         "author": "Takahashi, Ryo and Matsubara, Takashi and Uehara, Kuniaki",
-        "series": "Proceedings of The 10th Asian Conference on Machine Learning",
+        "booktitle": "Proceedings of The 10th Asian Conference on Machine Learning",
+        "series": "Asian Conference on Machine Learning",
         "doi": "10.48550/arXiv.1811.09030",
         "keywords": "type:inproceedings, category:data_regularisation, data_augmentation, deep_learning",
         "publisher": "PMLR",
