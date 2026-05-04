@@ -22,7 +22,9 @@ const generatedBibEntries = {
         "url": "https://arxiv.org/abs/2107.07075",
         "year": "2021",
         "pages": "1 - 10",
-        "howpublished": "{\\url{https://arxiv.org/abs/2107.07075}}"
+        "howpublished": "{\\url{https://arxiv.org/abs/2107.07075}}",
+        "publisher": "arXiv",
+        "booktitle": "Advances in Neural Information Processing Systems (NeurIPS)"
     },
     "qin2023infobatch": {
         "abstract": "Data pruning aims to obtain lossless performances with less overall cost. InfoBatch is a novel framework aiming to achieve lossless training acceleration by unbiased dynamic data pruning. InfoBatch randomly prunes a portion of less informative samples based on the loss distribution and rescales the gradients of the remaining samples to approximate the original gradient. InfoBatch consistently obtains lossless training results on classification, semantic segmentation, vision pretraining, and instruction fine-tuning tasks, losslessly saving 40% overall cost on CIFAR10/100, ImageNet-1K, and ADE20K.",
@@ -40,6 +42,7 @@ const generatedBibEntries = {
         "abstract": "Inspired by the phenomenon of catastrophic forgetting, this work investigates the learning dynamics of neural networks training on single classification tasks. A forgetting event is defined as when an individual training example transitions from being classified correctly to incorrectly over the course of learning. The authors find that certain examples are forgotten with high frequency while others are never forgotten, and that a significant fraction of examples can be omitted from training while maintaining state-of-the-art generalization performance.",
         "author": "Toneva, Mariya and Sordoni, Alessandro and des Combes, Remi Tachet and Trischler, Adam and Bengio, Yoshua and Gordon, Geoffrey J",
         "series": "International Conference on Learning Representations",
+        "booktitle": "International Conference on Learning Representations",
         "doi": "10.48550/arXiv.1812.05159",
         "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
         "publisher": "arXiv",
