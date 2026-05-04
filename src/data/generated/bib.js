@@ -8,7 +8,8 @@ const generatedBibEntries = {
         "title": "Progressive Data Dropout: An Embarrassingly Simple Approach to Faster Training",
         "type": "misc",
         "url": "https://arxiv.org/abs/2505.22342",
-        "year": "2025"
+        "year": "2025",
+        "howpublished": "{\url{https://arxiv.org/abs/2505.22342}}"
     },
     "paul2021deeplearning": {
         "abstract": "Recent success in deep learning has partially been driven by training increasingly overparametrized networks on ever larger datasets. This work proposes GraNd and EL2N scores to identify important training examples early in training, enabling pruning of significant fractions of training data without sacrificing test accuracy.",
@@ -19,7 +20,9 @@ const generatedBibEntries = {
         "title": "Deep Learning on a Data Diet: Finding Important Examples Early in Training",
         "type": "inproceedings",
         "url": "https://arxiv.org/abs/2107.07075",
-        "year": "2021"
+        "year": "2021",
+        "pages": "1 - 10",
+        "howpublished": "{\url{https://arxiv.org/abs/2107.07075}}"
     },
     "qin2023infobatch": {
         "abstract": "Data pruning aims to obtain lossless performances with less overall cost. InfoBatch is a novel framework aiming to achieve lossless training acceleration by unbiased dynamic data pruning. InfoBatch randomly prunes a portion of less informative samples based on the loss distribution and rescales the gradients of the remaining samples to approximate the original gradient. InfoBatch consistently obtains lossless training results on classification, semantic segmentation, vision pretraining, and instruction fine-tuning tasks, losslessly saving 40% overall cost on CIFAR10/100, ImageNet-1K, and ADE20K.",
@@ -27,10 +30,11 @@ const generatedBibEntries = {
         "doi": "10.48550/arXiv.2303.04947",
         "keywords": "type:misc, category:data_sampling, data_pruning, deep_learning",
         "publisher": "arXiv",
-        "title": "InfoBatch: Lossless Training Speed Up by Unbiased Dynamic Data Pruning",
+        "title": "{{InfoBatch}: Lossless Training Speed Up by Unbiased Dynamic Data Pruning}",
         "type": "misc",
         "url": "https://arxiv.org/abs/2303.04947",
-        "year": "2023"
+        "year": "2023",
+        "howpublished": "{\url{https://arxiv.org/abs/2303.04947}}"
     },
     "toneva2019empiricalforgetting": {
         "abstract": "Inspired by the phenomenon of catastrophic forgetting, this work investigates the learning dynamics of neural networks training on single classification tasks. A forgetting event is defined as when an individual training example transitions from being classified correctly to incorrectly over the course of learning. The authors find that certain examples are forgotten with high frequency while others are never forgotten, and that a significant fraction of examples can be omitted from training while maintaining state-of-the-art generalization performance.",
@@ -42,24 +46,28 @@ const generatedBibEntries = {
         "title": "An Empirical Study of Example Forgetting during Deep Neural Network Learning",
         "type": "inproceedings",
         "url": "https://arxiv.org/abs/1812.05159",
-        "year": "2019"
+        "year": "2019",
+        "pages": "1 - 9"
     },
     "mirzasoleiman2020coresets": {
         "abstract": "This work develops CRAIG, a method to select a weighted subset (coreset) of training data that closely estimates the full gradient by maximizing a submodular function. Applying incremental gradient methods to this subset is guaranteed to converge to the near-optimal solution with the same convergence rate as the full dataset. CRAIG achieves a speedup inversely proportional to the subset size, speeding up various methods by up to 6x for logistic regression and 3x for deep neural networks.",
         "author": "Mirzasoleiman, Baharan and Bilmes, Jeff and Leskovec, Jure",
-        "series": "Proceedings of the 37th International Conference on Machine Learning",
+        "booktitle": "Proceedings of the 37th International Conference on Machine Learning",
+        "series": "Internation Conference on Machine Learning",
         "doi": "10.48550/arXiv.1906.01827",
         "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
         "publisher": "PMLR",
         "title": "Coresets for Data-efficient Training of Machine Learning Models",
         "type": "inproceedings",
         "url": "https://proceedings.mlr.press/v119/mirzasoleiman20a",
-        "year": "2020"
+        "year": "2020",
+        "pages": "1 - 10"
     },
     "taylor2018dataaugmentation": {
         "abstract": "This study benchmarks various popular data augmentation schemes to allow researchers to make informed decisions as to which training methods are most appropriate for their datasets. Various geometric and photometric schemes are evaluated on a coarse-grained dataset using a relatively simple CNN. Results indicate that cropping in geometric augmentation significantly increases CNN task performance.",
         "author": "Taylor, Luke and Nitschke, Geoff",
-        "series": "2018 IEEE Symposium Series on Computational Intelligence (SSCI)",
+        "booktitle": "2018 IEEE Symposium Series on Computational Intelligence (SSCI)",
+        "series": "Symposium Series on Computational Intelligence (SSCI)"
         "doi": "10.1109/SSCI.2018.8628742",
         "keywords": "type:inproceedings, category:data_regularisation, data_augmentation, deep_learning",
         "publisher": "IEEE",
@@ -77,7 +85,7 @@ const generatedBibEntries = {
         "keywords": "type:inproceedings, category:data_regularisation, data_augmentation, deep_learning",
         "publisher": "PMLR",
         "pages": "786-798",
-        "title": "Data Augmentation using Random Image Cropping and Patching for Deep CNNs",
+        "title": "{Data Augmentation using Random Image Cropping and Patching for Deep {CNNs}}",
         "type": "inproceedings",
         "url": "https://proceedings.mlr.press/v95/takahashi18a.html",
         "year": "2018"
@@ -95,12 +103,14 @@ const generatedBibEntries = {
         "year": "2024",
         "volume": "57",
         "number": "3",
+        "pages": "1 - 9",
         "series": "ACM Computing Surveys",
     },
     "bengio2009curriculum": {
         "abstract": "This paper formalizes curriculum learning in the context of machine learning, where training examples are not randomly presented but organized in a meaningful order illustrating gradually more concepts. Experiments show that significant improvements in generalization can be achieved. The authors hypothesize that curriculum learning affects both the speed of convergence and, in the case of non-convex criteria, the quality of the local minima obtained.",
         "author": "Bengio, Yoshua and Louradour, Jerome and Collobert, Ronan and Weston, Jason",
-        "series": "Proceedings of the 26th Annual International Conference on Machine Learning",
+        "booktitle": "Proceedings of the 26th Annual International Conference on Machine Learning",
+        "series": "Internation Conference of Machine Learning",
         "doi": "10.1145/1553374.1553380",
         "isbn": "9781605585161",
         "keywords": "type:inproceedings, category:curriculum_learning, deep_learning",
@@ -120,6 +130,7 @@ const generatedBibEntries = {
         "title": "When Do Curricula Work?",
         "type": "misc",
         "url": "https://arxiv.org/abs/2012.03107",
-        "year": "2021"
+        "year": "2021",
+        "howpublished": "{\url{https://arxiv.org/abs/2012.03107}}"
     }
 };
