@@ -119,6 +119,6 @@ const generatedBibEntries = {
         "title": "When Do Curricula Work?",
         "type": "misc",
         "url": "https://arxiv.org/abs/2012.03107",
-        "year": "2020"
+        "year": "2021"
     }
 };
