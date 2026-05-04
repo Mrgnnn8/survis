@@ -9,7 +9,7 @@ const generatedBibEntries = {
         "type": "misc",
         "url": "https://arxiv.org/abs/2505.22342",
         "year": "2025",
-        "howpublished": "{\url{https://arxiv.org/abs/2505.22342}}"
+        "howpublished": "{\\url{https://arxiv.org/abs/2505.22342}}"
     },
     "paul2021deeplearning": {
         "abstract": "Recent success in deep learning has partially been driven by training increasingly overparametrized networks on ever larger datasets. This work proposes GraNd and EL2N scores to identify important training examples early in training, enabling pruning of significant fractions of training data without sacrificing test accuracy.",
@@ -22,7 +22,7 @@ const generatedBibEntries = {
         "url": "https://arxiv.org/abs/2107.07075",
         "year": "2021",
         "pages": "1 - 10",
-        "howpublished": "{\url{https://arxiv.org/abs/2107.07075}}"
+        "howpublished": "{\\url{https://arxiv.org/abs/2107.07075}}"
     },
     "qin2023infobatch": {
         "abstract": "Data pruning aims to obtain lossless performances with less overall cost. InfoBatch is a novel framework aiming to achieve lossless training acceleration by unbiased dynamic data pruning. InfoBatch randomly prunes a portion of less informative samples based on the loss distribution and rescales the gradients of the remaining samples to approximate the original gradient. InfoBatch consistently obtains lossless training results on classification, semantic segmentation, vision pretraining, and instruction fine-tuning tasks, losslessly saving 40% overall cost on CIFAR10/100, ImageNet-1K, and ADE20K.",
@@ -34,7 +34,7 @@ const generatedBibEntries = {
         "type": "misc",
         "url": "https://arxiv.org/abs/2303.04947",
         "year": "2023",
-        "howpublished": "{\url{https://arxiv.org/abs/2303.04947}}"
+        "howpublished": "{\\url{https://arxiv.org/abs/2303.04947}}"
     },
     "toneva2019empiricalforgetting": {
         "abstract": "Inspired by the phenomenon of catastrophic forgetting, this work investigates the learning dynamics of neural networks training on single classification tasks. A forgetting event is defined as when an individual training example transitions from being classified correctly to incorrectly over the course of learning. The authors find that certain examples are forgotten with high frequency while others are never forgotten, and that a significant fraction of examples can be omitted from training while maintaining state-of-the-art generalization performance.",
@@ -67,7 +67,7 @@ const generatedBibEntries = {
         "abstract": "This study benchmarks various popular data augmentation schemes to allow researchers to make informed decisions as to which training methods are most appropriate for their datasets. Various geometric and photometric schemes are evaluated on a coarse-grained dataset using a relatively simple CNN. Results indicate that cropping in geometric augmentation significantly increases CNN task performance.",
         "author": "Taylor, Luke and Nitschke, Geoff",
         "booktitle": "2018 IEEE Symposium Series on Computational Intelligence (SSCI)",
-        "series": "Symposium Series on Computational Intelligence (SSCI)"
+        "series": "Symposium Series on Computational Intelligence (SSCI)",
         "doi": "10.1109/SSCI.2018.8628742",
         "keywords": "type:inproceedings, category:data_regularisation, data_augmentation, deep_learning",
         "publisher": "IEEE",
@@ -105,7 +105,7 @@ const generatedBibEntries = {
         "volume": "57",
         "number": "3",
         "pages": "1 - 9",
-        "series": "ACM Computing Surveys",
+        "series": "ACM Computing Surveys"
     },
     "bengio2009curriculum": {
         "abstract": "This paper formalizes curriculum learning in the context of machine learning, where training examples are not randomly presented but organized in a meaningful order illustrating gradually more concepts. Experiments show that significant improvements in generalization can be achieved. The authors hypothesize that curriculum learning affects both the speed of convergence and, in the case of non-convex criteria, the quality of the local minima obtained.",
@@ -132,6 +132,6 @@ const generatedBibEntries = {
         "type": "misc",
         "url": "https://arxiv.org/abs/2012.03107",
         "year": "2021",
-        "howpublished": "{\url{https://arxiv.org/abs/2012.03107}}"
+        "howpublished": "{\\url{https://arxiv.org/abs/2012.03107}}"
     }
 };
