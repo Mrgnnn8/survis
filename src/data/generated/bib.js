@@ -38,19 +38,19 @@ const generatedBibEntries = {
         "year": "2023",
         "howpublished": "{\\url{https://arxiv.org/abs/2303.04947}}"
     },
-    "toneva2019empiricalforgetting": {
-        "abstract": "Inspired by the phenomenon of catastrophic forgetting, this work investigates the learning dynamics of neural networks training on single classification tasks. A forgetting event is defined as when an individual training example transitions from being classified correctly to incorrectly over the course of learning. The authors find that certain examples are forgotten with high frequency while others are never forgotten, and that a significant fraction of examples can be omitted from training while maintaining state-of-the-art generalization performance.",
-        "author": "Toneva, Mariya and Sordoni, Alessandro and des Combes, Remi Tachet and Trischler, Adam and Bengio, Yoshua and Gordon, Geoffrey J",
+    "10.1007/978-3-030-01249-6_9": {
+        "abstract": "We present a simple yet efficient approach capable of training deep neural networks on large-scale weakly-supervised web images, which are crawled raw from the Internet by using text queries, without any human annotation. We develop a principled learning strategy by leveraging curriculum learning, with the goal of handling a massive amount of noisy labels and data imbalance effectively. We design a new learning curriculum by measuring the complexity of data using its distribution density in a feature space, and rank the complexity in an unsupervised manner. This allows for an efficient implementation of curriculum learning on large-scale web images, resulting in a high-performance CNN the model, where the negative impact of noisy labels is reduced substantially. Importantly, we show by experiments that those images with highly noisy labels can surprisingly improve the generalization capability of model, by serving as a manner of regularization. Our approaches obtain state-of-the-art performance on four benchmarks: WebVision, ImageNet, Clothing-1M and Food-101. With an ensemble of multiple models, we achieved a top-5 error rate of 5.2% on the WebVision challenge [18] for 1000-category classification. This result was the top performance by a wide margin, outperforming second place by a nearly 50% relative error rate. Code and models are available at: https://github.com/MalongTech/CurriculumNet.",
+        "author": "Sheng Guo and Weilin Huang and Haozhi Zhang and Chenfan Zhuang and Dengke Dong and Matthew R. Scott and Dinglong Huang",
         "series": "International Conference on Learning Representations",
-        "booktitle": "International Conference on Learning Representations",
-        "doi": "10.48550/arXiv.1812.05159",
+        "booktitle": "Computer Vision -- ECCV 2018",
+        "doi": "10.1007/978-3-030-01249-6_9",
         "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
-        "publisher": "arXiv",
-        "title": "An Empirical Study of Example Forgetting during Deep Neural Network Learning",
+        "publisher": "Springer International Publishing",
+        "title": "CurriculumNet: Weakly Supervised Learning from Large-Scale Web Images",
         "type": "inproceedings",
-        "url": "https://arxiv.org/abs/1812.05159",
-        "year": "2019",
-        "pages": "1 - 9"
+        "url": "https://link.springer.com/chapter/10.1007/978-3-030-01249-6_9#publish-with-us",
+        "year": "2018",
+        "pages": "140 - 152"
     },
     "9568980": {
         "abstract": "Learning with noisy labels is one of the most practical but challenging tasks in deep learning. One promising way to treat noisy labels is to use the small-loss trick based on the memorization effect, that is, clean and noisy samples are identified by observing the network’s loss during training. Co-teaching+ is a state-of-the-art method that simultaneously trains two networks with small-loss selection using the “update by disagreement” strategy; however, it suffers from the problem that the selected samples tend to become noisy as the number of iterations increases. This phenomenon means that clean small-loss samples will be biased toward agreement data, which is the set of samples for which the two networks have the same prediction. This paper proposes an adaptive sample selection method to train deep neural networks robustly and prevent noise contamination in the disagreement strategy. Specifically, the proposed method calculates the threshold of the small-loss criterion by considering the loss distribution of the whole batch at each iteration. Then, the network is backpropagated by extracting samples below this threshold from the disagreement data. Combining the disagreement and agreement data of the two networks can suppress the degradation of the true-label rate of training data in a mini batch. Experiments were conducted using five commonly used benchmarks, MNIST, CIFAR-10, CIFAR-100, NEWS, and T-ImageNet to verify the robustness of the proposed method to noisy labels. The results show the proposed method improves generalization performance in an image classification task with simulated noise rates of up to 50%.",
