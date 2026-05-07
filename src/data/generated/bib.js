@@ -64,7 +64,7 @@ const generatedBibEntries = {
         "title": "Training Robust Deep Neural Networks on Noisy Labels Using Adaptive Sample Selection With Disagreement",
         "type": "inproceedings",
         "url": "https://ieeexplore.ieee.org/document/9568980",
-        "year": "2020",
+        "year": "2021",
         "pages": "1 - 12"
     },
     "taylor2018dataaugmentation": {
