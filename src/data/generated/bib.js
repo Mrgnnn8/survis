@@ -53,18 +53,19 @@ const generatedBibEntries = {
         "pages": "1 - 9"
     },
     "mirzasoleiman2020coresets": {
-        "abstract": "This work develops CRAIG, a method to select a weighted subset (coreset) of training data that closely estimates the full gradient by maximizing a submodular function. Applying incremental gradient methods to this subset is guaranteed to converge to the near-optimal solution with the same convergence rate as the full dataset. CRAIG achieves a speedup inversely proportional to the subset size, speeding up various methods by up to 6x for logistic regression and 3x for deep neural networks.",
-        "author": "Mirzasoleiman, Baharan and Bilmes, Jeff and Leskovec, Jure",
-        "booktitle": "Proceedings of the 37th International Conference on Machine Learning",
-        "series": "International Conference on Machine Learning",
-        "doi": "10.48550/arXiv.1906.01827",
+        "abstract": "Learning with noisy labels is one of the most practical but challenging tasks in deep learning. One promising way to treat noisy labels is to use the small-loss trick based on the memorization effect, that is, clean and noisy samples are identified by observing the network’s loss during training. Co-teaching+ is a state-of-the-art method that simultaneously trains two networks with small-loss selection using the “update by disagreement” strategy; however, it suffers from the problem that the selected samples tend to become noisy as the number of iterations increases. This phenomenon means that clean small-loss samples will be biased toward agreement data, which is the set of samples for which the two networks have the same prediction. This paper proposes an adaptive sample selection method to train deep neural networks robustly and prevent noise contamination in the disagreement strategy. Specifically, the proposed method calculates the threshold of the small-loss criterion by considering the loss distribution of the whole batch at each iteration. Then, the network is backpropagated by extracting samples below this threshold from the disagreement data. Combining the disagreement and agreement data of the two networks can suppress the degradation of the true-label rate of training data in a mini batch. Experiments were conducted using five commonly used benchmarks, MNIST, CIFAR-10, CIFAR-100, NEWS, and T-ImageNet to verify the robustness of the proposed method to noisy labels. The results show the proposed method improves generalization performance in an image classification task with simulated noise rates of up to 50%.",
+        "author": "Hiroshi Takeda, Soh Yoshida, Mitsuji Muneyasu",
+        "booktitle": "IEEE Access",
+        "volue": "9",
+        "series": "IEEE Access",
+        "doi": "10.1109/ACCESS.2021.3119582",
         "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
-        "publisher": "PMLR",
-        "title": "Coresets for Data-efficient Training of Machine Learning Models",
+        "publisher": "IEEE",
+        "title": "Training Robust Deep Neural Networks on Noisy Labels Using Adaptive Sample Selection With Disagreement",
         "type": "inproceedings",
-        "url": "https://proceedings.mlr.press/v119/mirzasoleiman20a",
+        "url": "https://ieeexplore.ieee.org/document/9568980",
         "year": "2020",
-        "pages": "1 - 10"
+        "pages": "1 - 12"
     },
     "taylor2018dataaugmentation": {
         "abstract": "This study benchmarks various popular data augmentation schemes to allow researchers to make informed decisions as to which training methods are most appropriate for their datasets. Various geometric and photometric schemes are evaluated on a coarse-grained dataset using a relatively simple CNN. Results indicate that cropping in geometric augmentation significantly increases CNN task performance.",
