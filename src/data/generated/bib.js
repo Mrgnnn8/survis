@@ -85,7 +85,7 @@ const generatedBibEntries = {
         "author": "Takahashi, Ryo and Matsubara, Takashi and Uehara, Kuniaki",
         "booktitle": "Proceedings of The 10th Asian Conference on Machine Learning",
         "series": "Asian Conference on Machine Learning",
-        "doi": "10.48550/arXiv.1811.09030",
+        "doi": "10.1109/TCSVT.2019.2935128",
         "keywords": "type:inproceedings, category:data_regularisation, data_augmentation, deep_learning",
         "publisher": "PMLR",
         "pages": "786-798",
@@ -125,16 +125,18 @@ const generatedBibEntries = {
         "pages": "41-48",
         "year": "2009"
     },
-    "wu2021curriculawork": {
-        "abstract": "Inspired by human learning, researchers have proposed ordering examples during training based on their difficulty. Both curriculum learning, exposing a network to easier examples early in training, and anti-curriculum learning, showing the most difficult examples first, have been suggested as improvements to the standard i.i.d. training. In this work, we set out to investigate the relative benefits of ordered learning. We first investigate the \emph{implicit curricula} resulting from architectural and optimization bias and find that samples are learned in a highly consistent order. Next, to quantify the benefit of \emph{explicit curricula}, we conduct extensive experiments over thousands of orderings spanning three kinds of learning: curriculum, anti-curriculum, and random-curriculum -- in which the size of the training dataset is dynamically increased over time, but the examples are randomly ordered. We find that for standard benchmark datasets, curricula have only marginal benefits, and that randomly ordered samples perform as well or better than curricula and anti-curricula, suggesting that any benefit is entirely due to the dynamic training set size. Inspired by common use cases of curriculum learning in practice, we investigate the role of limited training time budget and noisy data in the success of curriculum learning. Our experiments demonstrate that curriculum, but not anti-curriculum can indeed improve the performance either with limited training time budget or in existence of noisy data.",
-        "author": "Xiaoxia Wu, Ethan Dyer, Behnam Neyshabur",
-        "doi": "10.48550/arXiv.2012.03107",
-        "keywords": "type:misc, category:curriculum_learning, deep_learning",
-        "publisher": "arXiv",
-        "title": "When Do Curricula Work?",
-        "type": "misc",
-        "url": "https://arxiv.org/abs/2012.03107",
-        "year": "2021",
-        "howpublished": "{\\url{https://arxiv.org/abs/2012.03107}}"
+    "10030918": {
+        "abstract": "Recently the focus of the computer vision community has shifted from expensive supervised learning towards self-supervised learning of visual representations. While the performance gap between supervised and self-supervised has been narrowing, the time for training self-supervised deep networks remains an order of magnitude larger than its supervised counterparts, which hinders progress, imposes carbon cost, and limits societal benefits to institutions with substantial resources. Motivated by these issues, this paper investigates reducing the training time of recent self-supervised methods by various model-agnostic strategies that have not been used for this problem. In particular, we study three strategies: an extendable cyclic learning rate schedule, a matching progressive augmentation magnitude and image resolutions schedule, and a hard positive mining strategy based on augmentation difficulty. We show that all three methods combined lead up to 2.7 times speed-up in the training time of several self-supervised methods while retaining comparable performance to the standard self-supervised learning setting.",
+        "author": "Mustafa Taha Koçyiğit, Timothy M. Hospedales and Hakan Bilen",
+        "doi": "10.1109/WACV56688.2023.00561",
+        "keywords": "type:inproceedings, category:curriculum_learning, deep_learning",
+        "publisher": "IEEE",
+        "title": "Accelerating Self-Supervised Learning via Efficient Training Strategies",
+        "type": "inproceedings",
+        "url": "https://ieeexplore.ieee.org/document/10030918",
+        "year": "2023",
+        "howpublished": "{\\url{https://ieeexplore.ieee.org/document/10030918}}",
+        "booktitle": "2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+        "pages": "5643-5653"
     }
 };
