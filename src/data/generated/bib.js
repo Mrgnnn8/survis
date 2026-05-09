@@ -9,7 +9,8 @@ const generatedBibEntries = {
         "type": "misc",
         "url": "https://arxiv.org/abs/2505.22342",
         "year": "2025",
-        "howpublished": "{\\url{https://arxiv.org/abs/2505.22342}}"
+        "howpublished": "{\\url{https://arxiv.org/abs/2505.22342}}",
+        "series": "no_series"
     },
     "paul2021deeplearning": {
         "abstract": "Recent success in deep learning has partially been driven by training increasingly overparametrized networks on ever larger datasets. This work proposes GraNd and EL2N scores to identify important training examples early in training, enabling pruning of significant fractions of training data without sacrificing test accuracy.",
@@ -36,7 +37,8 @@ const generatedBibEntries = {
         "type": "misc",
         "url": "https://arxiv.org/abs/2303.04947",
         "year": "2023",
-        "howpublished": "{\\url{https://arxiv.org/abs/2303.04947}}"
+        "howpublished": "{\\url{https://arxiv.org/abs/2303.04947}}",
+        "series": "no_series"
     },
     "10.1007/978-3-030-01249-6_9": {
         "abstract": "We present a simple yet efficient approach capable of training deep neural networks on large-scale weakly-supervised web images, which are crawled raw from the Internet by using text queries, without any human annotation. We develop a principled learning strategy by leveraging curriculum learning, with the goal of handling a massive amount of noisy labels and data imbalance effectively. We design a new learning curriculum by measuring the complexity of data using its distribution density in a feature space, and rank the complexity in an unsupervised manner. This allows for an efficient implementation of curriculum learning on large-scale web images, resulting in a high-performance CNN the model, where the negative impact of noisy labels is reduced substantially. Importantly, we show by experiments that those images with highly noisy labels can surprisingly improve the generalization capability of model, by serving as a manner of regularization. Our approaches obtain state-of-the-art performance on four benchmarks: WebVision, ImageNet, Clothing-1M and Food-101. With an ensemble of multiple models, we achieved a top-5 error rate of 5.2% on the WebVision challenge [18] for 1000-category classification. This result was the top performance by a wide margin, outperforming second place by a nearly 50% relative error rate. Code and models are available at: https://github.com/MalongTech/CurriculumNet.",
@@ -138,6 +140,7 @@ const generatedBibEntries = {
         "year": "2023",
         "howpublished": "{\\url{https://ieeexplore.ieee.org/document/10030918}}",
         "booktitle": "2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
-        "pages": "5643-5653"
+        "pages": "5643-5653",
+        "series": "no_series"
     }
 };
