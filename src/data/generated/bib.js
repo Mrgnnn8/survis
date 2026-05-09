@@ -5,7 +5,7 @@ const generatedBibEntries = {
         "doi": "10.48550/arXiv.2505.22342",
         "keywords": "type:misc, category:data_sampling, data_dropout, deep_learning",
         "publisher": "arXiv",
-        "title": "{Progressive Data Dropout: An Embarrassingly Simple Approach to Faster Training}",
+        "title": "Progressive Data Dropout: An Embarrassingly Simple Approach to Faster Training",
         "type": "misc",
         "url": "https://arxiv.org/abs/2505.22342",
         "year": "2025",
@@ -17,11 +17,13 @@ const generatedBibEntries = {
         "series": "Advances in Neural Information Processing Systems (NeurIPS)",
         "doi": "10.48550/arXiv.2107.07075",
         "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
-        "title": "{Deep Learning on a Data Diet: Finding Important Examples Early in Training}",
+        "title": "Deep Learning on a Data Diet: Finding Important Examples Early in Training",
         "type": "inproceedings",
         "url": "https://arxiv.org/abs/2107.07075",
         "year": "2021",
         "pages": "1 - 10",
+        "howpublished": "{\\url{https://arxiv.org/abs/2107.07075}}",
+        "publisher": "arXiv",
         "booktitle": "Advances in Neural Information Processing Systems (NeurIPS)"
     },
     "qin2023infobatch": {
@@ -36,34 +38,34 @@ const generatedBibEntries = {
         "year": "2023",
         "howpublished": "{\\url{https://arxiv.org/abs/2303.04947}}"
     },
-    "guo2018curriculumnet": {
-        "abstract": "We present a simple yet efficient approach capable of training deep neural networks on large-scale weakly-supervised web images, which are crawled raw from the Internet by using text queries, without any human annotation. We develop a principled learning strategy by leveraging curriculum learning, with the goal of handling a massive amount of noisy labels and data imbalance effectively. We design a new learning curriculum by measuring the complexity of data using its distribution density in a feature space, and rank the complexity in an unsupervised manner. This allows for an efficient implementation of curriculum learning on large-scale web images, resulting in a high-performance CNN model, where the negative impact of noisy labels is reduced substantially. Our approaches obtain state-of-the-art performance on four benchmarks: WebVision, ImageNet, Clothing-1M and Food-101.",
-        "author": "Guo, Sheng and Huang, Weilin and Zhang, Haozhi and Zhuang, Chenfan and Dong, Dengke and Scott, Matthew R. and Huang, Dinglong",
+    "10.1007/978-3-030-01249-6_9": {
+        "abstract": "We present a simple yet efficient approach capable of training deep neural networks on large-scale weakly-supervised web images, which are crawled raw from the Internet by using text queries, without any human annotation. We develop a principled learning strategy by leveraging curriculum learning, with the goal of handling a massive amount of noisy labels and data imbalance effectively. We design a new learning curriculum by measuring the complexity of data using its distribution density in a feature space, and rank the complexity in an unsupervised manner. This allows for an efficient implementation of curriculum learning on large-scale web images, resulting in a high-performance CNN the model, where the negative impact of noisy labels is reduced substantially. Importantly, we show by experiments that those images with highly noisy labels can surprisingly improve the generalization capability of model, by serving as a manner of regularization. Our approaches obtain state-of-the-art performance on four benchmarks: WebVision, ImageNet, Clothing-1M and Food-101. With an ensemble of multiple models, we achieved a top-5 error rate of 5.2% on the WebVision challenge [18] for 1000-category classification. This result was the top performance by a wide margin, outperforming second place by a nearly 50% relative error rate. Code and models are available at: https://github.com/MalongTech/CurriculumNet.",
+        "author": "{Sheng Guo and Weilin Huang and Haozhi Zhang and Chenfan Zhuang and Dengke Dong and Matthew R. Scott and Dinglong Huang}",
+        "series": "International Conference on Learning Representations",
         "booktitle": "Computer Vision -- ECCV 2018",
-        "series": "European Conference on Computer Vision",
         "doi": "10.1007/978-3-030-01249-6_9",
-        "keywords": "type:inproceedings, category:curriculum_learning, data_pruning, deep_learning",
+        "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
         "publisher": "Springer International Publishing",
-        "title": "{{CurriculumNet}: Weakly Supervised Learning from Large-Scale Web Images}",
+        "title": "{{CurriculumNet: Weakly Supervised Learning from Large-Scale Web Images}}",
         "type": "inproceedings",
-        "url": "https://link.springer.com/chapter/10.1007/978-3-030-01249-6_9",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-030-01249-6_9#publish-with-us",
         "year": "2018",
         "pages": "140 - 152"
     },
-    "takeda2021robust": {
-        "abstract": "Learning with noisy labels is one of the most practical but challenging tasks in deep learning. This paper proposes an adaptive sample selection method to train deep neural networks robustly and prevent noise contamination in the disagreement strategy. Specifically, the proposed method calculates the threshold of the small-loss criterion by considering the loss distribution of the whole batch at each iteration. Then, the network is backpropagated by extracting samples below this threshold from the disagreement data. Experiments were conducted using five commonly used benchmarks: MNIST, CIFAR-10, CIFAR-100, NEWS, and T-ImageNet. The results show the proposed method improves generalization performance in an image classification task with simulated noise rates of up to 50%.",
-        "author": "Takeda, Hiroshi and Yoshida, Soh and Muneyasu, Mitsuji",
-        "journal": "IEEE Access",
-        "volume": "9",
+    "9568980": {
+        "abstract": "Learning with noisy labels is one of the most practical but challenging tasks in deep learning. One promising way to treat noisy labels is to use the small-loss trick based on the memorization effect, that is, clean and noisy samples are identified by observing the network’s loss during training. Co-teaching+ is a state-of-the-art method that simultaneously trains two networks with small-loss selection using the “update by disagreement” strategy; however, it suffers from the problem that the selected samples tend to become noisy as the number of iterations increases. This phenomenon means that clean small-loss samples will be biased toward agreement data, which is the set of samples for which the two networks have the same prediction. This paper proposes an adaptive sample selection method to train deep neural networks robustly and prevent noise contamination in the disagreement strategy. Specifically, the proposed method calculates the threshold of the small-loss criterion by considering the loss distribution of the whole batch at each iteration. Then, the network is backpropagated by extracting samples below this threshold from the disagreement data. Combining the disagreement and agreement data of the two networks can suppress the degradation of the true-label rate of training data in a mini batch. Experiments were conducted using five commonly used benchmarks, MNIST, CIFAR-10, CIFAR-100, NEWS, and T-ImageNet to verify the robustness of the proposed method to noisy labels. The results show the proposed method improves generalization performance in an image classification task with simulated noise rates of up to 50%.",
+        "author": "Hiroshi Takeda, Soh Yoshida, Mitsuji Muneyasu",
+        "booktitle": "IEEE Access",
+        "volue": "9",
         "series": "IEEE Access",
         "doi": "10.1109/ACCESS.2021.3119582",
-        "keywords": "type:article, category:data_sampling, data_pruning, deep_learning",
+        "keywords": "type:inproceedings, category:data_sampling, data_pruning, deep_learning",
         "publisher": "IEEE",
-        "title": "{Training Robust Deep Neural Networks on Noisy Labels Using Adaptive Sample Selection With Disagreement}",
-        "type": "article",
+        "title": "Training Robust Deep Neural Networks on Noisy Labels Using Adaptive Sample Selection With Disagreement",
+        "type": "inproceedings",
         "url": "https://ieeexplore.ieee.org/document/9568980",
         "year": "2021",
-        "pages": "141131 - 141143"
+        "pages": "1 - 12"
     },
     "taylor2018dataaugmentation": {
         "abstract": "This study benchmarks various popular data augmentation schemes to allow researchers to make informed decisions as to which training methods are most appropriate for their datasets. Various geometric and photometric schemes are evaluated on a coarse-grained dataset using a relatively simple CNN. Results indicate that cropping in geometric augmentation significantly increases CNN task performance.",
@@ -73,8 +75,8 @@ const generatedBibEntries = {
         "doi": "10.1109/SSCI.2018.8628742",
         "keywords": "type:inproceedings, category:data_regularisation, data_augmentation, deep_learning",
         "publisher": "IEEE",
-        "pages": "1542 - 1547",
-        "title": "{Improving Deep Learning with Generic Data Augmentation}",
+        "pages": "1542-1547",
+        "title": "Improving Deep Learning with Generic Data Augmentation",
         "type": "inproceedings",
         "url": "https://ieeexplore.ieee.org/document/8628742",
         "year": "2018"
@@ -87,7 +89,7 @@ const generatedBibEntries = {
         "doi": "10.1109/TCSVT.2019.2935128",
         "keywords": "type:inproceedings, category:data_regularisation, data_augmentation, deep_learning",
         "publisher": "PMLR",
-        "pages": "786 - 798",
+        "pages": "786-798",
         "title": "{Data Augmentation using Random Image Cropping and Patching for Deep {CNNs}}",
         "type": "inproceedings",
         "url": "https://proceedings.mlr.press/v95/takahashi18a.html",
@@ -100,13 +102,13 @@ const generatedBibEntries = {
         "doi": "10.1145/3700439",
         "keywords": "type:article, category:survey, data_sampling, data_regularisation, curriculum_learning, deep_learning",
         "publisher": "Association for Computing Machinery",
-        "title": "{On Efficient Training of Large-Scale Deep Learning Models}",
+        "title": "On Efficient Training of Large-Scale Deep Learning Models",
         "type": "article",
         "url": "https://doi.org/10.1145/3700439",
         "year": "2024",
         "volume": "57",
         "number": "3",
-        "pages": "1 - 36",
+        "pages": "1 - 9",
         "series": "ACM Computing Surveys"
     },
     "bengio2009curriculum": {
@@ -118,24 +120,24 @@ const generatedBibEntries = {
         "isbn": "9781605585161",
         "keywords": "type:inproceedings, category:curriculum_learning, deep_learning",
         "publisher": "Association for Computing Machinery",
-        "title": "{Curriculum Learning}",
+        "title": "Curriculum Learning",
         "type": "inproceedings",
         "url": "https://doi.org/10.1145/1553374.1553380",
-        "pages": "41 - 48",
+        "pages": "41-48",
         "year": "2009"
     },
-    "kocyigit2023accelerating": {
-        "abstract": "Recently the focus of the computer vision community has shifted from expensive supervised learning towards self-supervised learning of visual representations. While the performance gap between supervised and self-supervised has been narrowing, the time for training self-supervised deep networks remains an order of magnitude larger than its supervised counterparts. This paper investigates reducing the training time of recent self-supervised methods by various model-agnostic strategies. In particular, three strategies are studied: an extendable cyclic learning rate schedule, a matching progressive augmentation magnitude and image resolutions schedule, and a hard positive mining strategy based on augmentation difficulty. All three methods combined lead up to 2.7 times speed-up in the training time of several self-supervised methods while retaining comparable performance.",
-        "author": "Koçyiğit, Mustafa Taha and Hospedales, Timothy M. and Bilen, Hakan",
+    "10030918": {
+        "abstract": "Recently the focus of the computer vision community has shifted from expensive supervised learning towards self-supervised learning of visual representations. While the performance gap between supervised and self-supervised has been narrowing, the time for training self-supervised deep networks remains an order of magnitude larger than its supervised counterparts, which hinders progress, imposes carbon cost, and limits societal benefits to institutions with substantial resources. Motivated by these issues, this paper investigates reducing the training time of recent self-supervised methods by various model-agnostic strategies that have not been used for this problem. In particular, we study three strategies: an extendable cyclic learning rate schedule, a matching progressive augmentation magnitude and image resolutions schedule, and a hard positive mining strategy based on augmentation difficulty. We show that all three methods combined lead up to 2.7 times speed-up in the training time of several self-supervised methods while retaining comparable performance to the standard self-supervised learning setting.",
+        "author": "Mustafa Taha Koçyiğit, Timothy M. Hospedales and Hakan Bilen",
         "doi": "10.1109/WACV56688.2023.00561",
         "keywords": "type:inproceedings, category:curriculum_learning, deep_learning",
         "publisher": "IEEE",
         "title": "{Accelerating Self-Supervised Learning via Efficient Training Strategies}",
         "type": "inproceedings",
         "url": "https://ieeexplore.ieee.org/document/10030918",
+        "year": "2023",
+        "howpublished": "{\\url{https://ieeexplore.ieee.org/document/10030918}}",
         "booktitle": "2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
-        "series": "Winter Conference on Applications of Computer Vision (WACV)",
-        "pages": "5643 - 5653",
-        "year": "2023"
+        "pages": "5643-5653"
     }
 };
