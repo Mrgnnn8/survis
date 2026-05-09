@@ -141,60 +141,6 @@ const page = (function () {
         headerDiv.append($('<div id="selectors_container"><div class="label">Selectors</div><div id="selectors"></div><div id="clear_selectors" class="button tooltip" title="clear selectors [esc]">clear</div><div style="clear: both;"></div></div>'));
     }
 
-    function getMostCommonCategory(entries) {
-        const categoryCounts = {};
-    
-        $.each(entries, function (key, entry) {
-            if (entry.category) {
-                const category = entry.category.trim();
-    
-                if (category.length > 0) {
-                    categoryCounts[category] = (categoryCounts[category] || 0) + 1;
-                }
-            }
-        });
-    
-        let mostCommonCategory = 'Uncategorised';
-        let highestCount = 0;
-    
-        $.each(categoryCounts, function (category, count) {
-            if (count > highestCount) {
-                mostCommonCategory = category;
-                highestCount = count;
-            }
-        });
-    
-        return mostCommonCategory;
-    }
-
-    function renameClustersFromCategories() {
-        if (!clustering.clusterings) {
-            return;
-        }
-    
-        $.each(clustering.clusterings, function (clusteringId, clusteringData) {
-            $.each(clusteringData.clusters, function (clusterId, clusterData) {
-                const entries = [];
-    
-                $.each(clusterData.entries, function (i, entryKey) {
-                    if (bib.entries[entryKey]) {
-                        entries.push(bib.entries[entryKey]);
-                    }
-                });
-    
-                const categoryName = getMostCommonCategory(entries);
-    
-                $('#clusterings *').each(function () {
-                    const currentText = $(this).text().trim();
-    
-                    if (currentText === clusterId) {
-                        $(this).text(categoryName);
-                    }
-                });
-            });
-        });
-    }
-
     function initControl() {
         var controlDiv = $('#control');
         var timelineContainerDiv = $('<div>', {
@@ -290,31 +236,6 @@ const page = (function () {
             clustering.createClustering();
             page.update();
         });
-
-        clustering.nClusters = 4;
-        nClusterSpan.text(4);
-        
-        setTimeout(function () {
-            clustering.createClustering();
-            page.update();
-        
-            setTimeout(function () {
-                renameClustersFromCategories();
-            }, 300);
-        
-            var delay = 200;
-            $.each([1, 2, 3, 4], function (i, n) {
-                setTimeout(function () {
-                    selectors.toggleSelector('cluster', 'A.' + n);
-                    page.update();
-        
-                    setTimeout(function () {
-                        renameClustersFromCategories();
-                    }, 300);
-        
-                }, delay * (i + 1));
-            });
-        }, 100);
     }
 
     function initResult() {
