@@ -242,6 +242,13 @@ const page = (function () {
         setTimeout(function () {
             clustering.createClustering();
             page.update();
+            var delay = 200;
+            $.each([1, 2, 3, 4], function (i, n) {
+                setTimeout(function () {
+                    selectors.toggleSelector('cluster', 'A.' + n);
+                    page.update();
+                }, delay * (i + 1));
+            });
         }, 100);
     }
 
