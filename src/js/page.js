@@ -241,9 +241,13 @@ const page = (function () {
         nClusterSpan.text(4);
         setTimeout(function () {
             clustering.createClustering();
+            if (clustering.clusters && clustering.clusters.length) {
+                $.each(clustering.clusters, function (i, cluster) {
+                    selectors.toggleSelector('cluster', i);
+                });
+            }
             page.update();
         }, 100);
-    }
 
     function initResult() {
         var resultHeaderDiv = $('<div>', {
