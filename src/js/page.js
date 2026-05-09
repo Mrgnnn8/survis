@@ -236,6 +236,13 @@ const page = (function () {
             clustering.createClustering();
             page.update();
         });
+
+        clustering.nClusters = 4;
+        nClusterSpan.text(4);
+        setTimeout(function () {
+            clustering.createClustering();
+            page.update();
+        }, 100);
     }
 
     function initResult() {
