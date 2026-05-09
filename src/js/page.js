@@ -12,10 +12,10 @@ const page = (function () {
             addActions();
             page.generateTooltips($('body'));
 
-            // Automatically pre-select category keywords when the page loads
+            // Wait for the keyword cloud to render, then click the four category keywords
             setTimeout(function () {
-                preselectCategoriesOnLoad();
-            }, 300);
+                preselectCategoryKeywordsOnLoad();
+            }, 1000);
         },
         update: function (scrollToTop) {
             $('.tooltipstered').tooltipster('hide');
@@ -26,13 +26,9 @@ const page = (function () {
             clustering.updateClusters();
             entryLayout.updateEntryList();
 
-            setTimeout(
-                function () {
-                    // workaround: delayed loading waiting for the grid layout to be computed
-                    // to determine the correct width of the svg
-                    timeline.updateTimeline();
-                }, 500
-            );
+            setTimeout(function () {
+                timeline.updateTimeline();
+            }, 500);
 
             if (scrollToTop) {
                 $('#result_body').scrollTop(0);
@@ -282,7 +278,7 @@ const page = (function () {
         });
     }
 
-    function preselectCategoriesOnLoad() {
+    function preselectCategoryKeywordsOnLoad() {
         var categories = [
             'data_sampling',
             'curriculum_learning',
@@ -291,10 +287,33 @@ const page = (function () {
         ];
 
         $.each(categories, function (i, category) {
-            selectors.toggleSelector('category', category);
+            clickKeyword(category);
         });
 
         page.update(false);
+    }
+
+    function clickKeyword(keyword) {
+        var clicked = false;
+
+        $('#tag_clouds')
+            .find('span, div, a')
+            .each(function () {
+                var text = $(this).text().trim();
+
+                // SurVis often displays keyword counts directly after the word,
+                // e.g. "data_sampling5", so remove trailing numbers.
+                var textWithoutCount = text.replace(/[0-9]+$/, '');
+
+                if (textWithoutCount === keyword && !clicked) {
+                    $(this).trigger('click');
+                    clicked = true;
+                }
+            });
+
+        if (!clicked) {
+            console.warn('Keyword not found:', keyword);
+        }
     }
 
     function initResult() {
@@ -359,13 +378,11 @@ const page = (function () {
 
     function addActions() {
         $(document).keyup(function (e) {
-            // esc
             if (e.keyCode == 27) {
                 selectors.resetSelectors();
             }
         });
 
-        // http://stackoverflow.com/questions/93695/best-cross-browser-method-to-capture-ctrls-with-jquery
         $(document).keydown(function (e) {
             if ((e.which == '115' || e.which == '83') && (e.ctrlKey || e.metaKey)) {
                 e.preventDefault();
@@ -425,35 +442,6 @@ const page = (function () {
             searchInput.val('');
         }
     }
-
-    /*function applyLayout() {
-        var layout = $('body').layout({
-            applyDefaultStyles: true,
-            north: {
-                closable: false
-            },
-            south: {
-                closable: false,
-                resizable: false
-            },
-            west: {
-                onresize: function () {
-                    if (page.updateTimelineLayout) {
-                        page.updateTimelineLayout();
-                    }
-                }
-            }
-        });
-        layout.allowOverflow('north');
-        layout.sizePane('west', $(window).width() * 0.44);
-
-        layout.sizePane('south', 42);
-
-        page.adaptHeaderSize = function () {
-            var height = $('#selectors_container').height() + (electron ? 20 : 70);
-            layout.sizePane('north', height);
-        }
-    }*/
 
     function openExtraPage(pageName, pageSrc) {
         $('#extra_page').remove();
