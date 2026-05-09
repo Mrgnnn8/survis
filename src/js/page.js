@@ -243,6 +243,7 @@ const page = (function () {
             clustering.createClustering();
             page.update();
         }, 100);
+    }
 
     function initResult() {
         var resultHeaderDiv = $('<div>', {
