@@ -12,7 +12,7 @@ const page = (function () {
             addActions();
             page.generateTooltips($('body'));
 
-            // Pre-select the four category labels when the page loads
+            // Automatically pre-select category keywords when the page loads
             setTimeout(function () {
                 preselectCategoriesOnLoad();
             }, 300);
@@ -25,12 +25,15 @@ const page = (function () {
             tags.updateTagClouds();
             clustering.updateClusters();
             entryLayout.updateEntryList();
+
             setTimeout(
-                function() 
-                {
-                  // workaround: delayed loading waiting for the grid layout to be computed (to determine the correct width of the svg)
-                  timeline.updateTimeline();
-                }, 500);
+                function () {
+                    // workaround: delayed loading waiting for the grid layout to be computed
+                    // to determine the correct width of the svg
+                    timeline.updateTimeline();
+                }, 500
+            );
+
             if (scrollToTop) {
                 $('#result_body').scrollTop(0);
             }
@@ -73,7 +76,7 @@ const page = (function () {
         $('<div>', { id: 'control' }).appendTo(container);
         $('<div>', { id: 'result' }).appendTo(container);
         $('<div>', { id: 'footer' }).appendTo(container);
-        $('<div>', { id: 'notifications'}).appendTo($('body'));
+        $('<div>', { id: 'notifications' }).appendTo($('body'));
     }
 
     function loadAllCSS() {
@@ -220,7 +223,7 @@ const page = (function () {
             text: '-'
         }).appendTo(nClusterDiv);
 
-        buttonDec.click(function (event) {
+        buttonDec.click(function () {
             if (clustering.nClusters > 1) {
                 clustering.nClusters--;
                 nClusterSpan.text(clustering.nClusters);
@@ -238,7 +241,7 @@ const page = (function () {
             text: '+'
         }).appendTo(nClusterDiv);
 
-        buttonInc.click(function (event) {
+        buttonInc.click(function () {
             clustering.nClusters++;
             nClusterSpan.text(clustering.nClusters);
         });
@@ -281,14 +284,14 @@ const page = (function () {
 
     function preselectCategoriesOnLoad() {
         var categories = [
-            'Data Sampling',
-            'Data Regularisation',
-            'Curriculum Learning',
-            'Survey'
+            'data_sampling',
+            'curriculum_learning',
+            'data_regularisation',
+            'survey'
         ];
 
         $.each(categories, function (i, category) {
-            selectors.toggleSelector('tag', category);
+            selectors.toggleSelector('category', category);
         });
 
         page.update(false);
@@ -362,7 +365,7 @@ const page = (function () {
             }
         });
 
-        //http://stackoverflow.com/questions/93695/best-cross-browser-method-to-capture-ctrls-with-jquery
+        // http://stackoverflow.com/questions/93695/best-cross-browser-method-to-capture-ctrls-with-jquery
         $(document).keydown(function (e) {
             if ((e.which == '115' || e.which == '83') && (e.ctrlKey || e.metaKey)) {
                 e.preventDefault();
