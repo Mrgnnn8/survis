@@ -241,9 +241,15 @@ const page = (function () {
         nClusterSpan.text(4);
         setTimeout(function () {
             clustering.createClustering();
+            if (bib.clusters) {
+                $.each(bib.clusters, function (clusteringName, clusters) {
+                    $.each(clusters, function (clusterId) {
+                        selectors.toggleSelector('cluster', clusteringName + '.' + clusterId);
+                    });
+                });
+            }
             page.update();
         }, 100);
-    }
 
     function initResult() {
         var resultHeaderDiv = $('<div>', {
